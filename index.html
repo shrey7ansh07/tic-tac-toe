@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic-tac-toe(narutoxonepiece)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .header > div,
+      .footer > div,
+      .mid > div {
+        font-family: "Josefin Sans", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .mid .vs {
+        font-family: "Josefin Sans", sans-serif;
+        color: white;
+        font-weight: 900;
+        font-size: 70px;
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>Player 1</div>
+        <div>Player 2</div>
+      </div>
+      <div class="main-body">
+        <div class="Naruto">
+          <div
+            class="player itachi"
+            style="
+              background-image: url(images/naruto/itachi.jpeg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              grid-area: 1/1/2/2;
+            "
+          ></div>
+          <div
+            class="player naruto"
+            style="
+              background-image: url(images/naruto/naruto.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              grid-area: 1/2/2/3;
+            "
+          ></div>
+          <div
+            class="player sasuke"
+            style="
+              background-image: url(images/naruto/sasuke.jpeg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              grid-area: 2/1/3/2;
+            "
+          ></div>
+          <div
+            class="player kakashi"
+            style="
+              background-image: url(images/naruto/kakashi.jpeg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              grid-area: 2/2/3/3;
+            "
+          ></div>
+        </div>
+        <div class="mid">
+          <div class="player1">Player 1</div>
+          <div class="vs">VS</div>
+          <div class="player2">Player 2</div>
+        </div>
+        <div class="op">
+          <div
+            class="player zoro"
+            style="
+              background-image: url(images/op/zoro.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              grid-area: 1/1/2/2;
+            "
+          ></div>
+          <div
+            class="player sanji"
+            style="
+              background-image: url(images/op/sanji.jpeg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              grid-area: 1/2/2/3;
+            "
+          ></div>
+          <div
+            class="player luffy"
+            style="
+              background-image: url(images/op/luffy.jpeg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              grid-area: 2/1/3/2;
+            "
+          ></div>
+          <div
+            class="player shanks"
+            style="
+              background-image: url(images/op/shanks.jpeg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              grid-area: 2/2/3/3;
+            "
+          ></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div>Naruto</div>
+        <div><button class="play">PLAY</button></div>
+        <div>One Piece</div>
+      </div>
+    </div>
+  </body>
+</html>
