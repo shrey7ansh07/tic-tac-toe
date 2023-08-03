@@ -5,14 +5,13 @@ const player = (name,url) =>
 const playerNaruto = [];
 const playerOP = [];
 playerNaruto.push(player("naruto","images/naruto/naruto.jpg"));
-playerNaruto.push(player("sasuke","images/naruto/naruto.jpeg"));
-playerNaruto.push(player("itachi","images/naruto/naruto.jpeg"));
-playerNaruto.push(player("kakashi","images/naruto/naruto.jpeg"));
+playerNaruto.push(player("sasuke","images/naruto/sasuke.jpeg"));
+playerNaruto.push(player("itachi","images/naruto/itachi.jpeg"));
+playerNaruto.push(player("kakashi","images/naruto/kakashi.jpeg"));
 playerOP.push(player("luffy","images/op/luffy.jpeg"));
 playerOP.push(player("sanji","images/op/sanji.jpeg"));
 playerOP.push(player("shanks","images/op/shanks.jpeg"));
 playerOP.push(player("zoro","images/op/zoro.jpg"));
-const playername = playerNaruto.map(player=>player.name).concat(playerOP.map(player=>player.name));
 const selected = Array.from(document.querySelectorAll(".player"));
 const player1name = document.querySelector(".player1");
 const player2name = document.querySelector(".player2");
@@ -57,6 +56,14 @@ function playgame(e)
     {
         return;
     }
+    const player1 = playerNaruto.find(Element => Element.name === player1name.textContent);
+    const player2 = playerOP.find(Element => Element.name === player2name.textContent);
+    
+
+    
+    const players = {player1,player2};
+    localStorage.setItem("data",JSON.stringify(players));
+    window.location.href = "gameplay.html";
 }
 
 

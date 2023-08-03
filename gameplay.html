@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameplay</title>
+    <link rel="stylesheet" href="stylegame.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scriptgame.js" defer></script>
+    <style>
+      .name1,
+      .name2 {
+        font-family: "Josefin Sans", sans-serif;
+        color: white;
+        font-weight: bolder;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+      }
+      .vs {
+        font-family: "Josefin Sans", sans-serif;
+        color: white;
+        font-weight: bolder;
+        font-size: 80px;
+        font-style: italic;
+      }
+      .winner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .replay {
+        width: 50px;
+        height: 50px;
+        border: none;
+        transition: height 0.4s, width 0.4s;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="images/arrow-left-circle-fill.svg"
+      style="
+        height: 50px;
+        width: 50px;
+        background-color: rgb(234, 255, 0);
+        border-radius: 25px;
+      "
+    />
+    <div class="container">
+      <div class="player">
+        <div class="player1">
+          <img src="" alt="" />
+          <div class="name1"></div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="player2">
+          <img src="" alt="" />
+          <div class="name2"></div>
+        </div>
+      </div>
+      <div class="gameboard">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+        <div class="a5"></div>
+        <div class="a6"></div>
+        <div class="a7"></div>
+        <div class="a8"></div>
+        <div class="a9"></div>
+      </div>
+      <div class="footer">
+        <img src="images/reload.png" class="replay" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
